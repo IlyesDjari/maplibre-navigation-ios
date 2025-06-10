@@ -37,7 +37,7 @@ class CarPlayMapViewController: UIViewController, MLNMapViewDelegate {
     }()
     
     override func loadView() {
-        let mapView = NavigationMapView()
+        let mapView = NavigationMapView(frame: UIScreen.main.bounds)
         mapView.delegate = self
 //        mapView.navigationMapDelegate = self
         mapView.logoView.isHidden = true
