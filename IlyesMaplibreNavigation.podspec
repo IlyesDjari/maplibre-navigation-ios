@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IlyesMaplibreNavigation'
+  s.module_name      = 'MapLibreNavigation'
   s.version          = '4.0.0'
   s.summary          = 'Navigation SDK based on Maplibre and forked from Mapbox Navigation.'
   s.description      = <<-DESC
