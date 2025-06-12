@@ -1,0 +1,45 @@
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+
+platform :ios, '15.6'
+
+source 'https://github.com/IlyesDjari/IlyesMapboxDirectionsCustomSpecs.git'
+source 'https://cdn.cocoapods.org/'
+
+target 'NavigationTest' do
+  use_frameworks! :linkage => :static
+
+  # Use local version of your forked navigation SDK
+  pod 'IlyesMaplibreNavigation', :path => '../'
+
+  # Override MapboxDirections if needed
+  pod 'IlyesMapboxDirectionsCustom', 
+      :git => 'https://github.com/IlyesDjari/mapbox-directions-swift.git', 
+      :tag => '0.23.3'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.6'
+
+      # Disable xcfilelist use to fallback to shell scripts
+      config.build_settings.delete('INPUT_FILE_LISTS')
+      config.build_settings.delete('OUTPUT_FILE_LISTS')
+    end
+  end
+
+  installer.aggregate_targets.each do |aggregate_target|
+    aggregate_target.user_targets.each do |user_target|
+      user_target.build_configurations.each do |config|
+        config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.6'
+
+        config.build_settings.delete('INPUT_FILE_LISTS')
+        config.build_settings.delete('OUTPUT_FILE_LISTS')
+      end
+    end
+  end
+end
+
+

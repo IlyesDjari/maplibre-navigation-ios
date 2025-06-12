@@ -1,0 +1,63 @@
+PODS:
+  - IlyesMapboxDirectionsCustom (0.23.3):
+    - OHHTTPStubs (~> 9.0)
+    - Polyline (= 5.1.0)
+  - IlyesMaplibreNavigation (4.0.0):
+    - IlyesMapboxDirectionsCustom
+    - MapLibre (~> 6.0)
+    - Solar (= 2.1)
+    - Turf (~> 2.8)
+  - MapLibre (6.15.0)
+  - OHHTTPStubs (9.1.0):
+    - OHHTTPStubs/Default (= 9.1.0)
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
+  - Polyline (5.1.0)
+  - Solar (2.1.0)
+  - Turf (2.8.0)
+
+DEPENDENCIES:
+  - IlyesMapboxDirectionsCustom (from `https://github.com/IlyesDjari/mapbox-directions-swift.git`, tag `0.23.3`)
+  - IlyesMaplibreNavigation (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MapLibre
+    - OHHTTPStubs
+    - Polyline
+    - Solar
+    - Turf
+
+EXTERNAL SOURCES:
+  IlyesMapboxDirectionsCustom:
+    :git: https://github.com/IlyesDjari/mapbox-directions-swift.git
+    :tag: 0.23.3
+  IlyesMaplibreNavigation:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  IlyesMapboxDirectionsCustom:
+    :git: https://github.com/IlyesDjari/mapbox-directions-swift.git
+    :tag: 0.23.3
+
+SPEC CHECKSUMS:
+  IlyesMapboxDirectionsCustom: fbe3a2e1bc04ed47060b85c6f84c21b8101b1e43
+  IlyesMaplibreNavigation: dab8347e333d4c49d7e04d96c40ae402234e692e
+  MapLibre: eca7d26e6fdeacf782409290f28b744c2f5a7c16
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
+  Polyline: 2a1f29f87f8d9b7de868940f4f76deb8c678a5b1
+  Solar: 2dc6e7cc39186cb0c8228fa08df76fb50c7d8f24
+  Turf: aa2ede4298009639d10db36aba1a7ebaad072a5e
+
+PODFILE CHECKSUM: c3179ca938b2d34055b4f558de86827818964738
+
+COCOAPODS: 1.16.2

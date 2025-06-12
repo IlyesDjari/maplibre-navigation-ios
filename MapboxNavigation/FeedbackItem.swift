@@ -1,4 +1,3 @@
-import MapboxCoreNavigation
 import UIKit
 
 private extension UIImage {

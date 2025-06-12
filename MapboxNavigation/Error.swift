@@ -1,7 +1,4 @@
 import Foundation
-import MapboxCoreNavigation
-import MapboxCoreNavigationObjC
-import MapboxNavigationObjC
 
 extension NSError {
     /**

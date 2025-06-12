@@ -1,0 +1,50 @@
+{
+  "name": "IlyesMapboxDirectionsCustom",
+  "version": "0.23.3",
+  "summary": "Mapbox Directions API client for iOS in Swift.",
+  "module_name": "MapboxDirections",
+  "static_framework": true,
+  "description": "A Swift library to interact with the Mapbox Directions API, \noffering support for both Swift and Objective-C.",
+  "homepage": "https://github.com/IlyesDjari/mapbox-directions-swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "Ilyes Djari": "ilyes.djari@icapps.com"
+  },
+  "source": {
+    "git": "https://github.com/IlyesDjari/mapbox-directions-swift.git",
+    "tag": "0.23.3"
+  },
+  "platforms": {
+    "ios": "15.6"
+  },
+  "swift_versions": "5.9",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "source_files": [
+    "MapboxDirections/**/*.swift",
+    "MapboxDirectionsObjc/**/*.{h,m}"
+  ],
+  "public_header_files": "MapboxDirectionsObjc/include/**/*.h",
+  "resources": "MapboxDirectionsTests/resources/**/*",
+  "requires_arc": true,
+  "exclude_files": [
+    "MapboxDirectionsTests/**",
+    "MapboxDirections.xcodeproj",
+    "docs/**",
+    "scripts/**"
+  ],
+  "dependencies": {
+    "Polyline": [
+      "5.1.0"
+    ],
+    "OHHTTPStubs": [
+      "~> 9.0"
+    ]
+  },
+  "swift_version": "5.9"
+}

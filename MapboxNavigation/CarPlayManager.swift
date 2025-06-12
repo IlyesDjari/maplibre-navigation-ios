@@ -3,7 +3,6 @@ import CarPlay
 #if canImport(MapboxGeocoder)
 import MapboxGeocoder
 #endif
-import MapboxCoreNavigation
 import MapboxDirections
 import Turf
 

@@ -1,0 +1,52 @@
+{
+  "name": "IlyesMaplibreNavigation",
+  "version": "4.0.0",
+  "summary": "Navigation SDK based on Maplibre and forked from Mapbox Navigation.",
+  "description": "A Swift-based navigation SDK using MapLibre GL, forked and adapted from Mapbox's Navigation SDK.",
+  "homepage": "https://github.com/IlyesDjari/maplibre-navigation-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "Ilyes Djari": "ilyes.djari@icapps.com"
+  },
+  "source": {
+    "git": "https://github.com/IlyesDjari/maplibre-navigation-ios.git",
+    "tag": "4.0.0"
+  },
+  "static_framework": true,
+  "platforms": {
+    "ios": "15.6"
+  },
+  "swift_versions": "5.9",
+  "requires_arc": true,
+  "source_files": [
+    "MapboxCoreNavigation/**/*.{swift,h,m}",
+    "MapboxCoreNavigationObjC/**/*.{h,m}",
+    "MapboxNavigation/**/*.{swift,h,m}",
+    "MapboxNavigationObjC/**/*.{h,m}"
+  ],
+  "public_header_files": [
+    "MapboxCoreNavigationObjC/**/*.h",
+    "MapboxNavigationObjC/include/**/*.h"
+  ],
+  "header_mappings_dir": ".",
+  "resources": [
+    "MapboxCoreNavigation/resources/**/*",
+    "MapboxNavigation/Resources/Assets.xcassets"
+  ],
+  "dependencies": {
+    "Turf": [
+      "~> 2.8"
+    ],
+    "Solar": [
+      "2.1"
+    ],
+    "MapLibre": [
+      "~> 6.0"
+    ],
+    "IlyesMapboxDirectionsCustom": []
+  },
+  "swift_version": "5.9"
+}

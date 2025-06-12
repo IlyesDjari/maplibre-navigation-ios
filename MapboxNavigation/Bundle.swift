@@ -1,8 +1,10 @@
 import UIKit
 
 extension Bundle {
-    class var mapboxNavigation: Bundle { .module }
-    
+    class var mapboxNavigation: Bundle {
+        return Bundle(for: NavigationViewController.self)
+    }
+
     func image(named: String) -> UIImage? {
         UIImage(named: named, in: self, compatibleWith: nil)
     }

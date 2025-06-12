@@ -1,6 +1,5 @@
 import CoreLocation
 import MapboxDirections
-import MapboxDirectionsObjc
 
 extension RouteOptions {
     var activityType: CLActivityType {
