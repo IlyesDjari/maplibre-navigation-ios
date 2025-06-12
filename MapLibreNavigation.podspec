@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'IlyesMaplibreNavigation'
+  s.name             = 'MapLibreNavigation'
   s.module_name      = 'MapLibreNavigation'
   s.version          = '4.0.0'
   s.summary          = 'Navigation SDK based on Maplibre and forked from Mapbox Navigation.'
@@ -42,5 +42,5 @@ s.resource_bundles = {
   s.dependency 'Turf', '~> 2.8'
   s.dependency 'Solar', '2.1'
   s.dependency 'MapLibre', '~> 6.0'
-  s.dependency 'IlyesMapboxDirectionsCustom'
+  s.dependency 'MapboxDirections', '~> 0.23.3'
 end
