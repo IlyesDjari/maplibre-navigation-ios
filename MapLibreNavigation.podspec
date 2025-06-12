@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name             = 'MapLibreNavigation'
-  s.module_name      = 'MapLibreNavigation'
+  s.name             = 'MaplibreNavigation'
+  s.module_name      = 'MaplibreNavigation'
   s.version          = '4.0.0'
   s.summary          = 'Navigation SDK based on Maplibre and forked from Mapbox Navigation.'
   s.description      = <<-DESC
