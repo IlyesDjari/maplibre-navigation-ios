@@ -31,10 +31,12 @@ s.public_header_files = [
 
 s.header_mappings_dir = '.'
 
-  s.resources = [
+s.resource_bundles = {
+  'IlyesMaplibreNavigationResources' => [
     'MapboxCoreNavigation/resources/**/*',
     'MapboxNavigation/Resources/Assets.xcassets'
   ]
+}
 
   # Core dependencies
   s.dependency 'Turf', '~> 2.8'
