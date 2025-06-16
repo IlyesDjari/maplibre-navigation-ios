@@ -24,19 +24,12 @@ s.source_files = [
   'MapboxNavigationObjC/**/*.{h,m}'
 ]
 
-s.public_header_files = [
-  'MapboxCoreNavigationObjC/**/*.h',
-  'MapboxNavigationObjC/include/**/*.h'
-]
+s.public_header_files = 'MapboxDirectionsObjc/include/**/*.h'
 
-s.header_mappings_dir = '.'
-
-s.resource_bundles = {
-  'IlyesMaplibreNavigationResources' => [
+s.resources = [
     'MapboxCoreNavigation/resources/**/*',
     'MapboxNavigation/Resources/Assets.xcassets'
   ]
-}
 
   # Core dependencies
   s.dependency 'Turf', '~> 2.8'
