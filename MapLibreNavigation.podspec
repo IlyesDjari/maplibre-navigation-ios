@@ -28,7 +28,7 @@ s.public_header_files = 'MapboxDirectionsObjc/include/**/*.h'
 
 s.resources = [
     'MapboxCoreNavigation/resources/**/*',
-    'MapboxNavigation/Resources/Assets.xcassets'
+    'MapboxNavigation/Resources/MaplibreAssets.xcassets'
   ]
 
   # Core dependencies
