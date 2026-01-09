@@ -36,4 +36,5 @@ s.resources = [
   s.dependency 'Solar', '2.1'
   s.dependency 'MapLibre', '~> 6.0'
   s.dependency 'MapboxDirections', '~> 0.23.3'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 end
